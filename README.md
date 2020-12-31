@@ -9,7 +9,7 @@
 [![Build Status](https://img.shields.io/github/forks/bt-rb/bridgetown-theme-bootstrap-blog.svg)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog)
 [![Build Status](https://img.shields.io/github/stars/bt-rb/bridgetown-theme-bootstrap-blog.svg)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog)
 [![License](https://img.shields.io/github/license/bt-rb/bridgetown-theme-bootstrap-blog.svg)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog)
-[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/bt-rb/bridgetown-theme-bootstrap-blog.svg)](https://codeclimate.com/github/bt-rb/bridgetown-theme-bootstrap-blog)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dab98bff-4ef4-4ba6-b065-38d764f0b1a4/deploy-status)](https://app.netlify.com/sites/bridgetown-theme-bootstrap-blog/deploys)
 
 - [Features](#features)
 - [Ship It!](#ship-it)
@@ -27,6 +27,7 @@
 - Optimized for production
 - Inline SVG
 - SEO
+- Syntax highlighting via Dracula
 
 ## Ship It!
 
