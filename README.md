@@ -3,13 +3,26 @@
     <img src="src/images/social.png">
   </a>
 </p>
+<div align="center">
 
+[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog/generate)
+
+
+</div>
 <h2 align="center">Bridgetown + Bootstrap 5 Theme</h2>
+<div align="center">
 
-[![Build Status](https://img.shields.io/github/forks/bt-rb/bridgetown-theme-bootstrap-blog.svg)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog)
-[![Build Status](https://img.shields.io/github/stars/bt-rb/bridgetown-theme-bootstrap-blog.svg)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog)
-[![License](https://img.shields.io/github/license/bt-rb/bridgetown-theme-bootstrap-blog.svg)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog)
+[![bridgetown - 0.19.1](https://img.shields.io/static/v1?label=bridgetown&message=0.19.1&color=green&logo=github)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog)
+[![Ruby - >=2.5](https://img.shields.io/badge/Ruby->%3D2.6-red?logo=ruby&logoColor=white)](https://ruby-lang.org)
+[![Node.js - >=10.13](https://img.shields.io/badge/Node.js->%3D10.13-blue?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Yarn - 1](https://img.shields.io/badge/Yarn-1-blue?logo=yarn&logoColor=white)](https://classic.yarnpkg.com)
+
+[![stars - bridgetown-theme-bootstrap-blog](https://img.shields.io/github/stars/bt-rb/bridgetown-theme-bootstrap-blog?style=social)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog)
+[![forks - bridgetown-theme-bootstrap-blog](https://img.shields.io/github/forks/bt-rb/bridgetown-theme-bootstrap-blog?style=social)](https://github.com/bt-rb/bridgetown-theme-bootstrap-blog)
+[![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dab98bff-4ef4-4ba6-b065-38d764f0b1a4/deploy-status)](https://app.netlify.com/sites/bridgetown-theme-bootstrap-blog/deploys)
+
+</div>
 
 - [Features](#features)
 - [Ship It!](#ship-it)
