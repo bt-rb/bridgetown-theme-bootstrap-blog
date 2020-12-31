@@ -1,0 +1,9 @@
+- name: "Home"
+  url: "/"
+  internal: true
+- name: "About"
+  url: "/about"
+  internal: true
+- name: "Posts"
+  url: "/posts"
+  internal: true

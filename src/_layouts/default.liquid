@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% render "head", metadata: site.metadata, title: page.title %}
+  </head>
+  <body class="">
+    <div class="d-flex flex-column min-vh-100">
+      {% render "navbar", navigation: site.data.navigation, page: page %}
+      <main class="flex-grow-1">
+        {{ content }}
+      </main>
+      {% render "footer", author: site.data.authors.andrewmcodes, metadata: site.data.metadata %}
+    </div>
+    {% render "scripts" %}
+  </body>
+</html>

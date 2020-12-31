@@ -1,0 +1,10 @@
+{
+  "trailingSlash": true,
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/github/",
+      "destination": "https://github.com/bt-rb/bridgetown-theme-bootstrap-blog"
+    }
+  ]
+}

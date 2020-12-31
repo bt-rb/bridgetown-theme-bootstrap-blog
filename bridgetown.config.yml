@@ -1,0 +1,15 @@
+# Welcome to Bridgetown!
+#
+# https://www.bridgetownrb.com/docs/configuration/options
+#
+url: ""
+
+permalink: simple
+timezone: America/New_York
+
+svg:
+  optimize: true
+
+development:
+  minify_html:
+    enabled: false

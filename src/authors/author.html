@@ -1,0 +1,17 @@
+---
+layout: default
+title: Articles by :prototype-data-label
+prototype:
+  term: author
+  data: authors
+  data_label: name
+---
+
+
+<h1>{{ page.title }}</h1>
+
+<h2>Twitter: @{{ page.author_data.twitter }}</h2>
+
+{% for post in paginator.documents %}
+  {% render "blog_card", post: post %}
+{% endfor %}

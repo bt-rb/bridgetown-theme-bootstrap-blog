@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 px-3 col-lg-7 mx-auto">
+        <div class="mb-4 text-center">
+          <span class="badge bg-primary rounded-pill">#{{ page.category }}</span>
+          <span class="text-muted">{{ page.date | date_to_string: "ordinal", "US" }}</span>
+          <h2 class="mt-3 fs-1 fw-bold">{{ page.title | titleize }}</h2>
+        </div>
+        <div class="row justify-content-center mb-4">
+          <div class="col-auto">
+            <img class="rounded-circle" style="object-fit: cover;" width="48" height="48"
+              src="{{ site.data.authors.andrewmcodes.avatar }}" alt="{{ site.data.authors.andrewmcodes.name }}">
+          </div>
+          <div class="col-auto pl-2 text-left">
+            <a href="{{ page.author }}">{{ page.author }}</a>
+            <div class="text-muted">Author</div>
+          </div>
+        </div>
+        <p class="mb-4 text-muted lh-lg">{{ content }}</p>
+      </div>
+    </div>
+  </div>
+</section>

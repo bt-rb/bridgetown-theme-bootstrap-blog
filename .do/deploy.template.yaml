@@ -1,0 +1,14 @@
+spec:
+  name: bridgetown-theme-bootstrap-blog
+  static_sites:
+    - name: bridgetown-theme-bootstrap-blog
+      git:
+        branch: main
+        repo_clone_url: https://github.com/bt-rb/bridgetown-theme-bootstrap-blog.git
+      envs:
+        - key: NODE_ENV
+          value: "production"
+          type: SECRET
+        - key: BRIDGETOWN_ENV
+          value: "production"
+          type: SECRET

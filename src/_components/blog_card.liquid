@@ -1,0 +1,20 @@
+---
+name: Blog Card
+description: Displays a post in a card.
+variables:
+  post: [object, A post]
+---
+<div class="col-12 col-lg-6 mb-4">
+  <a class="text-decoration-none" href="{{ post.url }}">
+    <div class="py-4 px-3 p-lg-5 text-center bg-light rounded">
+      <span class="badge bg-primary rounded-pill">{{ post.category }}</span>
+      <h4 class="my-3 fw-bold text-dark">{{ post.title }}</h4>
+      <p class="mb-5 text-muted lh-lg">
+        {{ post.excerpt }}
+      </p>
+      <span class="text-primary">
+        {% svg images/icon-arrow-right.svg width=24 %}
+      </span>
+    </div>
+  </a>
+</div>

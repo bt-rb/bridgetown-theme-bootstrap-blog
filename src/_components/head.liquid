@@ -1,0 +1,12 @@
+---
+name: Head
+description: The website head component.
+variables:
+  title?: [string, Optional page title.]
+  metadata: [object, The site metadata object.]
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% seo %}
+{% feed_meta %}
+<link rel="stylesheet" href="{{ '_bridgetown/css/bootstrap/bootstrap-theme.css' | absolute_url }}">

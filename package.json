@@ -1,0 +1,55 @@
+{
+  "name": "@btrb/bridgetown-theme-bootstrap-blog",
+  "description": "A Bridgetown + Bootstrap 5 Blog Theme",
+  "homepage": "https://github.com/bt-rb/bridgetown-theme-bootstrap-blog#readme",
+  "version": "0.0.1",
+  "author": {
+    "email": "support@andrewm.codes",
+    "name": "Andrew Mason",
+    "url": "https://andrewm.codes"
+  },
+  "repository": {
+    "directory": "packages/prettier-config",
+    "type": "git",
+    "url": "git+https://github.com/bt-rb/bridgetown-theme-bootstrap-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bt-rb/bridgetown-theme-bootstrap-blog/issues"
+  },
+  "keywords": [
+    "andrewmcodes",
+    "bootstrap",
+    "bootstrap5",
+    "bridgetown",
+    "template",
+    "theme"
+  ],
+  "devDependencies": {
+    "bootstrap": "5.0.0-alpha3",
+    "browser-sync": "^2.24.7",
+    "clean-css-cli": "^4.2.1",
+    "cpx": "^1.5.0",
+    "node-sass": "^4.10.0",
+    "npm-run-all": "^4.1.3",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "browsersync": "node sync.js",
+    "build": "npm-run-all --sequential clean copy-* templates css",
+    "clean": "bin/bridgetown clean",
+    "copy-js": "cpx \"assets/javascript/**/*.*\" output/_bridgetown/js",
+    "copy-js-bootstrap": "cpx \"node_modules/bootstrap/dist/js/*\" output/_bridgetown/js/bootstrap/",
+    "copy-static": "cpx \"assets/static/**/*.*\" output/_bridgetown/static",
+    "css": "npm-run-all --sequential css-*",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 assets/styles/bootstrap-theme.scss output/_bridgetown/css/bootstrap/bootstrap-theme.css",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output output/_bridgetown/css/bootstrap/bootstrap-theme.min.css output/_bridgetown/css/bootstrap/bootstrap-theme.css",
+    "deploy": "npm-run-all --sequential clean build",
+    "start": "yarn watch",
+    "templates": "bin/bridgetown build",
+    "watch": "npm-run-all build --parallel watch-templates watch-css browsersync",
+    "watch-css": "yarn css-compile --watch",
+    "watch-templates": "bin/bridgetown serve --port 4001"
+  },
+  "private": true,
+  "license": "MIT"
+}
