@@ -14,11 +14,13 @@ variables:
         </a>
       </div>
       <div class="col-12 col-lg-7 mb-5 mb-lg-0">
-        Copyright
-        <script type="text/javascript">
-          document.write(new Date().getFullYear())
-        </script>
-        <a href="{{ author.url }}" target="_blank" rel="noopener">{{ author.name }} - MIT</a>
+        <div class="d-flex justify-content-center">
+          Copyright &copy
+          <script type="text/javascript">
+            document.write(new Date().getFullYear())
+          </script>
+          <a class="ml-1" href="{{ author.url }}" target="_blank" rel="noopener">{{ author.name }} - MIT</a>
+        </div>
       </div>
       <div class="col-12 col-lg-3">
         <div class="d-flex flex-column flex-lg-row align-items-center">
