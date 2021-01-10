@@ -8,27 +8,29 @@ variables:
 <footer class="py-5">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-12 col-lg-2 mb-5 mb-lg-0 text-center text-lg-left">
-        <a class="navbar-brand" target="_blank" rel="noopener noreferrer" href="https://github.com/bt-rb">
+      <div class="col-12 col-lg-2 mb-4 text-center text-lg-left">
+        <a class="navbar-brand" href="https://github.com/bt-rb" rel="noopener noreferrer" target="_blank">
           {% svg images/logo-btrb.svg width=48 %}
         </a>
       </div>
-      <div class="col-12 col-lg-7 mb-5 mb-lg-0">
-        Copyright
-        <script type="text/javascript">
-          document.write(new Date().getFullYear())
-        </script>
-        <a href="{{ author.url }}" target="_blank" rel="noopener">{{ author.name }} - MIT</a>
+      <div class="col-12 col-lg-7 mb-2">
+        <div class="d-flex justify-content-center">
+          Copyright &copy
+          <script type="text/javascript">
+            document.write(new Date().getFullYear())
+          </script>
+          <a class="ml-1" href="{{ author.url }}" target="_blank" rel="noopener">{{ author.name }}
+            - MIT</a>
+        </div>
       </div>
       <div class="col-12 col-lg-3">
-        <div class="d-flex flex-column flex-lg-row align-items-center">
-          <a target="_blank" rel="noopener noreferrer" class="mr-3" href="https://twitter.com/{{ author.twitter }}">
+        <div class="d-flex justify-content-center md:justify-content-end">
+          <a class="mr-3" href="https://twitter.com/{{ author.twitter }}" rel="noopener noreferrer" target="_blank">
             {% svg images/logo-twitter.svg width=24 %}
           </a>
-          <a target="_blank" rel="noopener noreferrer" class="mr-3" href="https://github.com/{{ metadata.repo }}">
+          <a class="mr-3" href="https://github.com/{{ metadata.repo }}" rel="noopener noreferrer" target="_blank">
             {% svg images/logo-github.svg width=24 %}
           </a>
-          <a class="btn btn-primary" href="TODO">Support us</a>
         </div>
       </div>
     </div>

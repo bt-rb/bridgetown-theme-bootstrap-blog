@@ -10,16 +10,15 @@ variables:
       <a class="navbar-brand" href="/">
         {% svg images/logo-btrb.svg width=48 %}
       </a>
-      <button aria-controls="sideMenu05" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-        data-target="#sideMenu05" data-toggle="side-menu" type="button">
+      <button aria-controls="sideMenu05" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#sideMenu05" data-toggle="side-menu" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarExample">
         <ul class="ml-auto navbar-nav">
           {%- for item in navigation -%}
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
-          </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+            </li>
           {%- endfor -%}
         </ul>
       </div>
@@ -27,39 +26,21 @@ variables:
   </nav>
   <div class="d-none fixed-top top-0 bottom-0" id="sideMenu05">
     <div class="position-absolute top-0 right-0 bottom-0 left-0 bg-dark" style="opacity: 0.7"></div>
-    <nav class="navbar navbar-light position-absolute top-0 bottom-0 left-0 w-75 pt-3 pb-4 px-4 bg-white"
-      style="overflow-y: auto;">
+    <nav class="navbar navbar-light position-absolute top-0 bottom-0 left-0 w-75 pt-3 pb-4 px-4 bg-white" style="overflow-y: auto;">
       <div class="d-flex flex-column w-100 h-100">
         <div class="d-flex justify-content-between mb-4">
           <a href="/">
             {% svg images/logo-btrb.svg width=48 %}</a>
-          <button aria-controls="sideMenu05" aria-label="Close" class="btn-close" data-target="#sideMenu05"
-            data-toggle="side-menu" type="button"></button>
+          <button aria-controls="sideMenu05" aria-label="Close" class="btn-close" data-target="#sideMenu05" data-toggle="side-menu" type="button"></button>
         </div>
         <div>
           <ul class="navbar-nav mb-4">
             {%- for item in navigation -%}
-            <li class="nav-item">
-              <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+              </li>
             {%- endfor -%}
           </ul>
-          <div class="border-top pt-4 mb-5">
-            <a class="btn btn-outline-primary w-100 mb-2" href="#">Log in</a>
-            <a class="btn btn-primary w-100" href="#">Sign up</a>
-          </div>
-        </div>
-        <div class="mt-auto">
-          <p>
-            <span>Get in Touch</span>
-            <a href="#">info@example.com</a>
-          </p>
-          <a class="mr-2" href="#">
-            {% svg images/logo-twitter.svg width=48 %}
-            </a>
-          <a class="mr-2" href="#">
-            {% svg images/logo-github.svg width=48 %}
-            </a>
         </div>
       </div>
     </nav>
