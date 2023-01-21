@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.0)
+    activesupport (6.1.7.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -52,7 +52,7 @@ GEM
     bridgetown-seo-tag (3.0.5)
       bridgetown (>= 0.15.0, < 2.0)
     colorator (1.1.0)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.1.10)
     erubi (1.10.0)
     faraday (1.2.0)
       multipart-post (>= 1.2, < 3)
@@ -64,7 +64,7 @@ GEM
     hash_with_dot_access (1.1.0)
       activesupport (>= 5.0.0, < 7.0)
     htmlcompressor (0.4.0)
-    i18n (1.8.5)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     kramdown (2.3.0)
       rexml
@@ -79,7 +79,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mini_portile2 (2.4.0)
-    minitest (5.14.2)
+    minitest (5.17.0)
     multipart-post (2.1.1)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
@@ -99,11 +99,11 @@ GEM
       unicode-display_width (~> 1.1, >= 1.1.1)
     thor (1.0.1)
     tilt (2.0.10)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.7.0)
     webrick (1.7.0)
-    zeitwerk (2.4.2)
+    zeitwerk (2.6.6)
 
 PLATFORMS
   ruby
